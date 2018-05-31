@@ -1,0 +1,8 @@
+source ~/vimfiles/vim-plug.vim
+
+set backspace=2
+set backspace=indent,eol,start
+
+source $HOME/vimfiles/user-settings.vim
+
+
