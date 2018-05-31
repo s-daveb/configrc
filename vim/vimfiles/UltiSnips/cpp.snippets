@@ -1,0 +1,51 @@
+# vim: set ft=snippets :
+###########################################################################
+#                            TextMate Snippets                            #
+###########################################################################
+
+priority -10
+
+snippet modeline "// vim: set foldmethod..."
+// vim: set foldmethod=marker foldmarker=@fold,@endfold textwidth=80 ts=8 sts=8 sw=8 autoindent smartindent cindent noexpandtab ft=cpp.doxygen :
+endsnippet
+
+snippet doxyfile "Doxygen documentation for a source file"
+/** @file ${1:`!p snip.rv = snip.fn`}
+ * @brief ${2}
+ *
+ * ${3}
+ */
+endsnippet
+
+snippet doxyclass "Doxygen documentation for a class"
+/** @class ${1}::${2}
+ * @brief ${3}
+ *
+ * ${4}
+ */
+endsnippet
+
+snippet includefold
+// @fold  #include directives
+// C includes
+${1}
+// STL Includes
+${2}
+// Boost Includes
+${3}
+// Project Includes
+${4}
+// @endfold
+endsnippet
+
+snippet usingfold
+// @fold  #using directives
+// STL Usings
+${2}
+// Boost Usings
+${3}
+// Project Usings
+${4}
+// @endfold
+endsnippet
+

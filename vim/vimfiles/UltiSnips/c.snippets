@@ -1,0 +1,39 @@
+# vim: set ft=snippets :
+###########################################################################
+#                            TextMate Snippets                            #
+###########################################################################
+priority -20
+
+snippet modeline "// vim: set foldmethod..."
+// vim: set foldmethod=marker foldmarker=@fold,@endfold textwidth=80 ts=8 sts=8 sw=8 autoindent smartindent cindent noexpandtab ft=c.doxygen :
+endsnippet
+
+snippet ignoreWarning
+#pragma GCC diagnostic ignored "${1}"
+endsnippet
+
+snippet doxyfunc  "Doxygen Documentation for a function"
+/** ${1}.
+ * ${2}
+ *
+ * @param ${3}
+ * @param ${4}
+ *
+ * @returns ${5}
+ */
+endsnippet
+
+snippet fold "Insert a VIM fold marker"
+// @fold ${1}
+endsnippet
+
+snippet foldc "Insert a VIM fold close marker"
+// @endfold
+endsnippet
+
+snippet includefold
+// @fold  #include directives
+${1}
+// @endfold
+endsnippet
+
