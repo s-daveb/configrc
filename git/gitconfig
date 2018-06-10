@@ -1,0 +1,11 @@
+[user]
+	name = AAAA B CCCC DDDD
+#	defined per-project now:
+#	email = xxxxxxx@yyyy.zzz
+[core]
+	editor = vim
+[push]
+	default = simple
+[alias]
+	st = status
+	lg = log --graph --oneline --all --decorate
