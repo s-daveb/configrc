@@ -10,7 +10,8 @@ if [ $BASH_VERSINFO -lt 4 ]; then
 	    ((${#NAME}>$LENGTH)) && NAME="/.../${NAME:$[${#NAME}-LENGTH+4]}";
 	    echo "$PRE$NAME"
 	}
-	export PS1="[🙈@❄️l\h❄️h:$(_PS1 "$PWD" 20)] $ "
+	#export PS1="[🙈@❄️l\h❄️h:$(_PS1 "$PWD" 20)] $ "
+	export PS1="[\u@\h:$(_PS1 "$PWD" 20)] $ "
 else
 	export PROMPT_DIRTRIM=3
 	#export PS1="[🙈@❄️ \h❄️: \W] $ "
