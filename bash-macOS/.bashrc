@@ -1,5 +1,10 @@
 
 
+function printDate()
+{
+	echo -n ""
+}
+
 # Pre-requisites
 [ -f ~/.bashrc.pre ] && source ~/.bashrc.pre
 [ ! -d ~/.bashrc.d ] && mkdir -v ~/.bashrc.d
@@ -12,7 +17,3 @@ for F in ~/.bashrc.d/*.sh ; do
 	source ${F}
 	echo "$(printDate) ${F} loaded" >> ~/.bashrc.log
 done
-
-#source ~/.bashrc.d/colors.sh
-#source ~/.bashrc.d/ps1.sh
-
