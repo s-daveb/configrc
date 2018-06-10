@@ -9,4 +9,4 @@ REPODIR=$PWD
 cd $HOME
 
 ln -sv "${REPODIR}/vimrc" "$HOME/.vimrc"
-ln -sv "${REPODIR}/vimfiles" "$HOME/.vim"
+ln -sv "${REPODIR}/vimfiles/" "$HOME/.vim"

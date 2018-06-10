@@ -35,7 +35,12 @@ augroup END
 
 """"""""""""""""""	GUI Configuration	"""""""""""""""""""""
 if has('gui')
-	set guifont=Fira\ Code\ 10
+  if has('mac')
+    set guifont=Fira\ Code:h16
+  else
+    set guifont=Fira\ Code\ 16
+  endif
+
 	set lines=24
 	set columns=80
   colo molokai

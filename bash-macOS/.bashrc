@@ -1,10 +1,3 @@
-
-
-function printDate()
-{
-	echo -n ""
-}
-
 # Pre-requisites
 [ -f ~/.bashrc.pre ] && source ~/.bashrc.pre
 [ ! -d ~/.bashrc.d ] && mkdir -v ~/.bashrc.d
