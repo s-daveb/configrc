@@ -37,12 +37,7 @@ Plug 'skwp/vim-html-escape'
 
 
 "- Ahem - /WORKING/ Language Completion
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-Plug 'pdavydov108/vim-lsp-cquery'
+source $HOME/.vim/vim-plug-completion.vim
 
 " Functionality
 Plug 'honza/vim-snippets'
@@ -87,6 +82,8 @@ Plug 'xolox/vim-colorscheme-switcher'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 Plug 'dracula/vim'
+Plug 'kitten/vim-adventurous'  " Dracula's baby
+
 
 " Git/HG integration
 Plug 'ludovicchabant/vim-lawrencium'
