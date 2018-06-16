@@ -1,7 +1,10 @@
 [user]
-	name = AAAA B CCCC DDDD
-#	defined per-project now:
+#       name =  AAAA BBBB
+
+###### For Maximum Github Privacy, do not set your git email here.
+###### You can set it per-project at <proj-root>/.git/config
 #	email = xxxxxxx@yyyy.zzz
+
 [core]
 	editor = vim
 [push]
