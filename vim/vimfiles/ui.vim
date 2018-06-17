@@ -36,9 +36,9 @@ augroup END
 """"""""""""""""""	GUI Configuration	"""""""""""""""""""""
 if has('gui')
   if has('mac')
-    set guifont=Fira\ Code:h16
+    set guifont=Fira\ Code\ Retina:h16
   else
-    set guifont=Fira\ Code\ 16
+    set guifont=Fira\ Code\ 12
   endif
 
 	set lines=24
