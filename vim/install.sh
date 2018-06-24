@@ -8,6 +8,10 @@ REPODIR=$PWD
 
 cd $HOME
 
+
+[ -f "${HOME}/.vimrc" ]  && unlink "$HOME/.vimrc"
+[ -d "${HOME}/.vim" ]  && unlink "$HOME/.vim"
+
 ln -sv "${REPODIR}/vimrc" "$HOME/.vimrc"
 ln -sv "${REPODIR}/vimfiles" "$HOME/.vim"
 
