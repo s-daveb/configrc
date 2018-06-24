@@ -1,4 +1,5 @@
 Plug 'prabirshrestha/async.vim'
+
 Plug 'prabirshrestha/asyncomplete.vim'
 
 Plug 'prabirshrestha/vim-lsp'
