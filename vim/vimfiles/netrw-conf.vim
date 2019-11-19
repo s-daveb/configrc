@@ -6,12 +6,13 @@ let g:netrw_liststyle = 3
 
 let gitignore = netrw_gitignore#Hide()
 
-let g:netrw_list_hide = '^\.git\/*\$'
-
+" HIde dot files
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 if !(empty(gitignore)) && !(filereadable("configure.ac"))
 	let g:netrw_list_hide = g:netrw_list_hide . ',' .  gitignore
 endif
 
+let g:netrw_hide = 1
 "unlet gitignore
 "unlet g:netrw_list_hide
 

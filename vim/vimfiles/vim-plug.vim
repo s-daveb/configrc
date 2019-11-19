@@ -15,6 +15,10 @@ Plug 'LeonB/vim-nginx'
 Plug 'pangloss/vim-javascript'
 Plug 'skwp/vim-html-escape'
 
+Plug 'keith/swift.vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'octol/vim-cpp-enhanced-highlight'
+
 " Language Completion
 "YouCompleteMe is a dumpster fire
 " FUCK DEOPLETE TOO
@@ -38,13 +42,14 @@ Plug 'skwp/vim-html-escape'
 
 "- Ahem - /WORKING/ Language Completion
 source $HOME/.vim/vim-plug-completion.vim
+"Plug 'zxqfl/tabnine-vim'
 
-" Functionality
+" Completion Functionality
 Plug 'honza/vim-snippets'
-"Plug 'SirVer/ultisnips'  " Was causing issues with deoplete, try again later
-"Plug 'ervandew/supertab' " Needed to integrate with autocomplete plugins
+Plug 'SirVer/ultisnips'
 Plug 'majutsushi/tagbar'
 
+" Command and Edit mode plugins
 Plug 'tpope/vim-abolish'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'idanarye/breeze.vim'
@@ -53,15 +58,10 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'moll/vim-bbye' " buffer cleaner
 Plug 'wikitopian/hardmode'
 
-
-" Bloated alternatives to netrw - do not use
-"Plug 'Shougo/unite.vim'
-"Plug 'Shougo/neossh.vim'
-"Plug 'Shougo/vimfiler.vim'
-"Plug 'scrooloose/nerdtree'
-
 " Netrw config
 Plug 'tpope/vim-vinegar'
+
+" File searching plugins
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'justinmk/vim-dirvish'
 
@@ -84,15 +84,14 @@ Plug 'tomasr/molokai'
 Plug 'dracula/vim'
 Plug 'kitten/vim-adventurous'  " Dracula's baby
 
-
 " Git/HG integration
 Plug 'ludovicchabant/vim-lawrencium'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'amiorin/vim-project'
 
 " Project Integration
 Plug 'editorconfig/editorconfig-vim'
-
 
 " " All of your Plugs must be added before the following line
 call plug#end()            " required
@@ -105,12 +104,11 @@ source $HOME/.vim/colorscheme.switcher.vim
 source $HOME/.vim/airline.vim
 source $HOME/.vim/tagbar.vim
 source $HOME/.vim/vim-asynclsp.vim
-
 source $HOME/.vim/UltiSnips.vim
 source $HOME/.vim/CtrlP.vim
 source $HOME/.vim/projects.vim
-source $HOME/.vim/netrw-conf.vim
 source $HOME/.vim/better-whitespace.vim
 source $HOME/.vim/hardmode.vim
 source $HOME/.vim/tmux.compat.vim
 
+source $HOME/.vim/netrw-conf.vim

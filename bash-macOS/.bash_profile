@@ -1,4 +1,5 @@
 
 case $- in
-  *i*) . $HOME/.bashrc ;;
+	*i*) . $HOME/.bashrc ;;
+	*) echo $-
 esac

@@ -1,8 +1,8 @@
 
 set encoding=utf-8
+set backspace=indent,eol,start
 
 set noautochdir
-set ruler
 
 set directory=$HOME/.vim/swap
 
@@ -11,6 +11,9 @@ set undodir=$HOME/.vim/undo/
 set undolevels=1000
 set undoreload=10000
 set modeline
+
+set tagrelative
+set tags=./build/tags,./tags;
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files

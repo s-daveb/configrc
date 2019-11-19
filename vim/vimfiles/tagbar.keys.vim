@@ -1,3 +1,3 @@
 
-nmap <F8> :call MobileTagBar()<CR>
+nmap <F8> :TagbarToggle<CR>
 nmap <C-w>t :TagbarOpen ['j']<CR>
