@@ -14,39 +14,11 @@ Plug 'dag/vim-fish'
 Plug 'LeonB/vim-nginx'
 Plug 'pangloss/vim-javascript'
 Plug 'skwp/vim-html-escape'
-
 Plug 'keith/swift.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
-" Language Completion
-"YouCompleteMe is a dumpster fire
-" FUCK DEOPLETE TOO
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-"let g:deoplete#enable_at_startup = 1
-" -Ahem- Language Support
 
-"
-" DEFINITELY FUCK THIS PIECE OF SHIT TOO
-"Plug 'autozimu/LanguageClient-neovim', {
-"    \ 'branch': 'next',
-"    \ 'do': 'bash install.sh',
-"    \ }
-
-
-"- Ahem - /WORKING/ Language Completion
-source $HOME/.vim/vim-plug-completion.vim
-"Plug 'zxqfl/tabnine-vim'
-
-" Completion Functionality
-Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
 Plug 'majutsushi/tagbar'
 
 " Command and Edit mode plugins
@@ -64,6 +36,7 @@ Plug 'tpope/vim-vinegar'
 " File searching plugins
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'justinmk/vim-dirvish'
+Plug '/mileszs/ack.vim'
 
 " Tmux integration
 Plug 'benmills/vimux'
@@ -93,22 +66,25 @@ Plug 'amiorin/vim-project'
 " Project Integration
 Plug 'editorconfig/editorconfig-vim'
 
+source $HOME/.vim/vim-plug-completion.vim
 " " All of your Plugs must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
 
 """"""""""""""""""""""" PLUGIN CONFIG """""""""""""""""""""""""""""""
 "
-source $HOME/.vim/vim-editorconfig.vim
 source $HOME/.vim/colorscheme.switcher.vim
+source $HOME/.vim/ack.vim
 source $HOME/.vim/airline.vim
 source $HOME/.vim/tagbar.vim
-source $HOME/.vim/vim-asynclsp.vim
-source $HOME/.vim/UltiSnips.vim
 source $HOME/.vim/CtrlP.vim
 source $HOME/.vim/projects.vim
 source $HOME/.vim/better-whitespace.vim
 source $HOME/.vim/hardmode.vim
 source $HOME/.vim/tmux.compat.vim
-
+source $HOME/.vim/UltiSnips.vim
+source $HOME/.vim/vim-editorconfig.vim
 source $HOME/.vim/netrw-conf.vim
+source $HOME/.vim/vim-asynclsp.vim
+
+

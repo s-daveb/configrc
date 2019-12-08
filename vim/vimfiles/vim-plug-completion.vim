@@ -1,3 +1,4 @@
+" Base system
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -18,13 +19,13 @@ Plug 'prabirshrestha/asyncomplete-buffer.vim'
 
 " because I can stop getting new plugins
 Plug 'wellle/tmux-complete.vim'
-Plug 'yami-beta/asyncomplete-omni.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
 
-"Plug 'lifepillar/vim-mucomplete'
-if has('python3')
-    Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
-endif
-
+" Snippet support
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+"Plug 'thomasfaingnaert/vim-lsp-snippets'
+"Plug 'thomasfaingnaert/vim-lsp-ultisnips'
 Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
+"
+
+" vim:set et sts=0 sw=4 ts=4 tw=80:

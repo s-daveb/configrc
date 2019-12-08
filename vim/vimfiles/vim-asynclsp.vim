@@ -1,4 +1,3 @@
-
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
@@ -14,11 +13,18 @@ let g:lsp_async_completion = 1
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
+let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_remove_duplicates = 1
+let g:lsp_async_completion = 1
+
+"  Enable disagnostics
+let g:lsp_signs_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
+
 let g:lsp_signs_error = {'text': '✗'}
 let g:lsp_signs_warning = {'text': '‼'} " icons require GUI
 let g:lsp_signs_hint = {'text': '!?' } " icons require GUI
 
-set completeopt+=preview
 
 if executable('pyls')
     " pip install python-language-server
@@ -67,13 +73,25 @@ call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options
     \ 'completor': function('asyncomplete#sources#buffer#completor'),
     \ }))
 
+
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
+
 if has('python3')
-    let g:UltiSnipsExpandTrigger="<c-e>"
+    let g:UltiSnipsExpandTrigger="<c-l>"
+    let g:UltiSnipsJumpForwardTrigger="<c-j>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
     call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
         \ 'name': 'ultisnips',
         \ 'whitelist': ['*'],
         \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
         \ }))
 endif
+"let g:lsp_log_verbose = 1
+
+" for asyncomplete.vim log
+"let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+
+
+" vim:set et sts=0 sw=4 ts=4 tw=80:
