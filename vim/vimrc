@@ -6,7 +6,7 @@ source $HOME/.vim/vim-plug.vim
 """"""""   My configuration """""""""
 runtime macros/matchit.vim " for html % matching
 
-source $HOME/.vim/editorconfig.vim
+source $HOME/.vim/editorbehavior.vim
 source $HOME/.vim/vim-help.vim
 
 

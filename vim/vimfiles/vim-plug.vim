@@ -56,6 +56,7 @@ Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 Plug 'dracula/vim'
 Plug 'kitten/vim-adventurous'  " Dracula's baby
+Plug 'sjl/badwolf'
 
 " Git/HG integration
 Plug 'ludovicchabant/vim-lawrencium'
@@ -74,7 +75,6 @@ filetype plugin indent on    " required
 """"""""""""""""""""""" PLUGIN CONFIG """""""""""""""""""""""""""""""
 "
 source $HOME/.vim/colorscheme.switcher.vim
-source $HOME/.vim/ack.vim
 source $HOME/.vim/airline.vim
 source $HOME/.vim/tagbar.vim
 source $HOME/.vim/CtrlP.vim

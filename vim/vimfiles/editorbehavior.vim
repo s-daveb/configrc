@@ -3,7 +3,9 @@ set title
 set encoding=utf-8
 set backspace=indent,eol,start
 
-set noautochdir
+au BufWinEnter *.* set nu
+
+"set autochdir
 
 set directory=$HOME/.vim/swap
 
@@ -35,7 +37,6 @@ autocmd BufEnter *.* silent loadview
 
 autocmd BufWinLeave *.* mkview!
 autocmd BufWinEnter *.* silent loadview
-
 
 syntax on
 
@@ -69,7 +70,9 @@ command Delview call MyDeleteView()
 " Lower-case user commands: http://vim.wikia.com/wiki/Replace_a_builtin_command_using_cabbrev
 cabbrev delview <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Delview' : 'delview')<CR>
 
-if exists('$TMUX')
-autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
-autocmd VimLeave * call system("tmux setw automatic-rename")
-endif
+"if exists('$TMUX')
+"autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
+"autocmd VimLeave * call system("tmux setw automatic-rename")
+"endif
+
+
