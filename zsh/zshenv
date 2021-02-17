@@ -1,0 +1,6 @@
+
+if [ -d ~/.zshenv.d ]; then
+	for F in ~/.zshenv.d/*.zsh ; do
+		source ${F}
+	done
+fi
