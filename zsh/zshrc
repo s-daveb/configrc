@@ -26,7 +26,9 @@ antigen apply
 alias wtf='wtf -o'
 eval "$(thefuck --alias)"
 
-# oh-my-zsh seems to enable this by default, not desired for
-# workflow of controlling terminal title.
+source $(brew --prefix)/etc/profile.d/z.sh
+
+#oh-my-zsh seems to enable this by default. No me gusta.
 #DISABLE_AUTO_TITLE="true"
 
+eval $(thefuck --alias)

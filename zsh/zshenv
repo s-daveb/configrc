@@ -1,6 +1,13 @@
+#/usr/bin/env zsh
+#
 
-if [ -d ~/.zshenv.d ]; then
-	for F in ~/.zshenv.d/*.zsh ; do
-		source ${F}
-	done
+if [[ ! -o interactive ]]; then
+	#echo "ZSH login shell - limited environment"
+	source ~/.zshenv.d/00-usr-local.zsh
+else
+	if [ -d ~/.zshenv.d ]; then
+		for F in `ls ~/.zshenv.d/*.zsh` ; do
+			source ${F}
+		done
+	fi
 fi

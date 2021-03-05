@@ -10,8 +10,7 @@ cd $HOME
 
 unlink "${HOME}/.zshrc"
 unlink "${HOME}/.zshenv"
-echo -n "Removing "
-rm -rfv "${HOME}/.zshenv.d"
+unlink "${HOME}/.zshenv.d"
 
 ln -sv "${REPODIR}/zshrc" "${HOME}/.zshrc"
 ln -sv "${REPODIR}/zshenv" "${HOME}/.zshenv"
