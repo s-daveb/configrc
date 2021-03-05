@@ -16,10 +16,11 @@ let g:netrw_hide = 1
 "unlet gitignore
 "unlet g:netrw_list_hide
 
-if &columns > 80 | let g:netrw_winsize = 15 | else | let g:netrw_winsize = 25 | endif
+if &columns > 110 | let g:netrw_winsize = 25 | else | let g:netrw_winsize = 15 | endif
 
 map <silent> <C-E> :Lexplore<cr>
 
+autocmd FileType cpp :Lexplore
 
 fu! MapNtree()
 	map <silent><buffer> gn    :Ntree<cr>

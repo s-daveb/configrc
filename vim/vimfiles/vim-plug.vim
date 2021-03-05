@@ -28,7 +28,8 @@ Plug 'idanarye/breeze.vim'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'moll/vim-bbye' " buffer cleaner
-Plug 'wikitopian/hardmode'
+"Plug 'wikitopian/hardmode'
+Plug 'takac/vim-hardtime'
 
 " Netrw config
 Plug 'tpope/vim-vinegar'
@@ -80,7 +81,8 @@ source $HOME/.vim/tagbar.vim
 source $HOME/.vim/CtrlP.vim
 source $HOME/.vim/projects.vim
 source $HOME/.vim/better-whitespace.vim
-source $HOME/.vim/hardmode.vim
+"source $HOME/.vim/hardmode.vim
+source $HOME/.vim/hardtime.vim
 source $HOME/.vim/tmux.compat.vim
 source $HOME/.vim/UltiSnips.vim
 source $HOME/.vim/vim-editorconfig.vim

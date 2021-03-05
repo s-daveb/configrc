@@ -44,7 +44,7 @@ if has('gui_running')
   	set columns=80
   endif
 
-  colo molokai
+  colo dracula
   "
 	"#hi Folded term=standout cterm=bold ctermfg=6 ctermbg=0 guifg=#455457 guibg=#1b1d1e gui=italic
 	" imap <LeftClick> <nop>
@@ -64,7 +64,7 @@ hi SignColumn ctermbg=None cterm=bold
 endif
 
 hi lspReference ctermfg=DarkGrey ctermbg=none cterm=underline gui=underline  guifg=Grey
-hi Pmenu guibg=grey ctermbg=none ctermfg=245 cterm=bold gui=bold
+hi Pmenu guifg=white guibg=#34363A ctermbg=none ctermfg=245 cterm=bold
 hi PmenuSel cterm=bold gui=bold
 
 set mouse=a
