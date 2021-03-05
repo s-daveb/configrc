@@ -9,7 +9,7 @@ cd $SWD
 REPODIR=$PWD
 
 [ ! -d "${SWAPDIR}/swap" ]  && mkdir -p "${SWAPDIR}/swap"
-[ ! -d "${SWAPDIR}/undo" ]  && mkdir -p"${SWAPDIR}/undo"
+[ ! -d "${SWAPDIR}/undo" ]  && mkdir -p "${SWAPDIR}/undo"
 [ ! -d "${SWAPDIR}/view" ]  && mkdir -p "${SWAPDIR}/view"
 
 [ ! -d $PLUGDIR ]  && mkdir -p $PLUGDIR
