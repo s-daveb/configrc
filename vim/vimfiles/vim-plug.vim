@@ -2,7 +2,7 @@
 " set the runtime path to include Vundle and initialize
 filetype off
 
-call plug#begin('~/.vim/plug')
+call plug#begin('~/.vim-plug')
 " dependencies
 Plug 'xolox/vim-misc'
 

@@ -7,12 +7,14 @@ au BufWinEnter *.* set nu
 
 "set autochdir
 
-set directory=$HOME/.vim/swap
+set directory=$HOME/.cache/vim/swap/
+set viewdir=$HOME/.cache/vim/view
 
 set undofile
-set undodir=$HOME/.vim/undo/
+set undodir=$HOME/.cache/vim/undo/
 set undolevels=1000
 set undoreload=10000
+
 set modeline
 
 set tagrelative

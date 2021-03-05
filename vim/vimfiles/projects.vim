@@ -1,4 +1,4 @@
 
-call project#rc("~/Development/c++/")
+call project#rc("~/Developer/Personal/c++/quartz-warriors")
 
-Project 'cytosis'
+Project 'quartz-warriors'
