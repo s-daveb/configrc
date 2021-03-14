@@ -20,7 +20,7 @@ if &columns > 110 | let g:netrw_winsize = 25 | else | let g:netrw_winsize = 15 |
 
 map <silent> <C-E> :Lexplore<cr>
 
-autocmd FileType cpp :Lexplore
+"autocmd FileType cpp :Lexplore
 
 fu! MapNtree()
 	map <silent><buffer> gn    :Ntree<cr>

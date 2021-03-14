@@ -29,11 +29,10 @@ augroup resCur
 augroup END
 
 
-
 """"""""""""""""""	GUI Configuration	"""""""""""""""""""""
 if has('gui_running')
   if has('mac')
-    set guifont=Fira\ Code:h14
+    set guifont=Iosevka-Slaggathor:h14
     set macligatures
     set lines=48
     set columns=80

@@ -1,5 +1,3 @@
-""""""VUNDLE CONFIGURATION""""""
-" set the runtime path to include Vundle and initialize
 filetype off
 
 call plug#begin('~/.vim-plug')
@@ -47,7 +45,6 @@ Plug 'edkolev/tmuxline.vim'
 " Sexy status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-bufferline'
 
 " Colors
 Plug 'spf13/vim-colors'
