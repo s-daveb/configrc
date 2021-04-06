@@ -6,15 +6,18 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 
-" Language servers
+" Completion Sources
 " ---------------
-
 " Vim Script
 Plug 'Shougo/neco-vim'
 Plug 'prabirshrestha/asyncomplete-necovim.vim'
 
 " Broken: URL-like constructions make VIM hang
 "Plug 'prabirshrestha/asyncomplete-file.vim'
+
+" For path completion and others
+Plug 'yami-beta/asyncomplete-omni.vim'
+
 
 " Content from other VIM buffers
 Plug 'prabirshrestha/asyncomplete-buffer.vim'
