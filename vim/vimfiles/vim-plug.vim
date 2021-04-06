@@ -16,7 +16,6 @@ Plug 'keith/swift.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
-
 Plug 'majutsushi/tagbar'
 
 " Command and Edit mode plugins
@@ -26,7 +25,6 @@ Plug 'idanarye/breeze.vim'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'moll/vim-bbye' " buffer cleaner
-"Plug 'wikitopian/hardmode'
 Plug 'takac/vim-hardtime'
 
 " Netrw config
@@ -65,7 +63,8 @@ Plug 'amiorin/vim-project'
 " Project Integration
 Plug 'editorconfig/editorconfig-vim'
 
-source $HOME/.vim/vim-plug-completion.vim
+source $HOME/.vim/asyncompletion-plug.vim
+"
 " " All of your Plugs must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -78,12 +77,10 @@ source $HOME/.vim/tagbar.vim
 source $HOME/.vim/CtrlP.vim
 source $HOME/.vim/projects.vim
 source $HOME/.vim/better-whitespace.vim
-"source $HOME/.vim/hardmode.vim
 source $HOME/.vim/hardtime.vim
 source $HOME/.vim/tmux.compat.vim
 source $HOME/.vim/UltiSnips.vim
-source $HOME/.vim/vim-editorconfig.vim
+source $HOME/.vim/editorconfig.vim
 source $HOME/.vim/netrw-conf.vim
-source $HOME/.vim/vim-asynclsp.vim
-
+source $HOME/.vim/asynclsp.vim
 

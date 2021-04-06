@@ -7,7 +7,7 @@ source $HOME/.vim/vim-plug.vim
 runtime macros/matchit.vim " for html % matching
 
 source $HOME/.vim/editorbehavior.vim
-source $HOME/.vim/vim-help.vim
+source $HOME/.vim/help.vim
 
 
 source $HOME/.vim/ui.vim

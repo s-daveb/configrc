@@ -1,4 +1,5 @@
 " Base system
+" ----------------
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -6,11 +7,14 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 
 " Language servers
-Plug 'prabirshrestha/asyncomplete-file.vim'
+" ---------------
 
 " Vim Script
 Plug 'Shougo/neco-vim'
 Plug 'prabirshrestha/asyncomplete-necovim.vim'
+
+" Broken: URL-like constructions make VIM hang
+"Plug 'prabirshrestha/asyncomplete-file.vim'
 
 " Content from other VIM buffers
 Plug 'prabirshrestha/asyncomplete-buffer.vim'

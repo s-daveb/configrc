@@ -41,11 +41,12 @@ if executable('/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefaul
 endif
 
 
-au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
-    \ 'name': 'file',
-    \ 'whitelist': ['*'],
-    \ 'completor': function('asyncomplete#sources#file#completor')
-    \ }))
+" Blacklisted because it's buggy - anything that looks like a URL makes VIM hang
+"au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+"    \ 'name': 'file',
+"    \ 'whitelist': ['*'],
+"    \ 'completor': function('asyncomplete#sources#file#completor')
+"    \ }))
 
 call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
     \ 'name': 'buffer',

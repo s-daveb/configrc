@@ -54,15 +54,15 @@ else
   au BufWinEnter :silent set title<CR>
   colo default
 
-hi Normal ctermbg=None
-hi NonText cterm=bold ctermfg=245 ctermbg=None
-hi Visual ctermbg=White ctermfg=DarkGrey
-"	hi Folded term=bold ctermbg=None ctermfg=245
-hi SignColumn ctermbg=None cterm=bold
-
+  hi Normal ctermbg=None
+  hi NonText cterm=bold ctermfg=245 ctermbg=None
+  hi Visual ctermbg=White ctermfg=DarkGrey
+  "	hi Folded term=bold ctermbg=None ctermfg=245
+  hi SignColumn ctermbg=None cterm=bold
+  hi QuickFixLine ctermbg=yellow ctermfg=DarkGray
 endif
 
-hi lspReference ctermfg=DarkGrey ctermbg=none cterm=underline gui=underline  guifg=Grey
+hi lspRefeprence ctermfg=DarkGrey ctermbg=none cterm=underline gui=underline  guifg=Grey
 hi Pmenu guifg=white guibg=#34363A ctermbg=none ctermfg=245 cterm=bold
 hi PmenuSel cterm=bold gui=bold
 

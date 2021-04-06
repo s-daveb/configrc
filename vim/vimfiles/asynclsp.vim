@@ -28,8 +28,8 @@ let g:lsp_settings_root_markers = [
 \   '.npmrc'
 \ ]
 
-source ~/.vim/vim-asynclsp-providers.vim
-source ~/.vim/vim-asynclsp-keymap.vim
+source ~/.vim/asynclsp-providers.vim
+source ~/.vim/asynclsp-keymap.vim
 
 " for asyncomplete.vim log
 "
