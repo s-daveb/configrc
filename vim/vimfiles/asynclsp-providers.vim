@@ -23,14 +23,14 @@ let g:tmuxcomplete#asyncomplete_source_options = {
 			\ }
 
 
-let clang_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd'
+let g:clangd_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd'
 
-if executable(clang_path)
+if executable(g:clangd_path)
 	augroup lsp_clangd
 		autocmd!
 		autocmd User lsp_setup call lsp#register_server({
 					\ 'name': 'clangd',
-					\ 'cmd': {server_info->[clang_path, '--background-index', '--suggest-missing-includes', '-j=2']},
+					\ 'cmd': {server_info->[g:clangd_path, '--background-index', '--suggest-missing-includes', '-j=2']},
 					\ 'whitelist': ['c', 'cpp', 'cpp.doxygen', 'objc', 'objcpp'],
 					\ })
 		autocmd FileType c setlocal omnifunc=lsp#complete
