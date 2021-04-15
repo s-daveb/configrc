@@ -1,7 +1,4 @@
 
-set title
-set encoding=utf-8
-set backspace=indent,eol,start
 
 au BufWinEnter *.* set nu
 

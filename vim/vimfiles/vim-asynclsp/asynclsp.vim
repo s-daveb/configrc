@@ -18,18 +18,9 @@ let g:lsp_signs_error = {'text': '✗'}
 let g:lsp_signs_warning = {'text': '‼'} " icons require GUI
 let g:lsp_signs_hint = {'text': '!?' } " icons require GUI
 
-
-let g:lsp_settings_root_markers = [
-\   '.git',
-\   '.git/',
-\   '.svn',
-\   '.hg',
-\   '.bzr',
-\   '.npmrc'
-\ ]
-
-source ~/.vim/asynclsp-providers.vim
-source ~/.vim/asynclsp-keymap.vim
+source ~/.vim/vim-asynclsp/providers.vim
+source ~/.vim/vim-asynclsp/lsp-settings.vim
+source ~/.vim/vim-asynclsp/keymap.vim
 
 " for asyncomplete.vim log
 "

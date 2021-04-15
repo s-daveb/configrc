@@ -1,5 +1,11 @@
 
 set nocompatible
+set title
+set encoding=utf-8
+set backspace=indent,eol,start
+set mouse=a
+let mapleader=" "
+
 
 source $HOME/.vim/vim-plug.vim
 

@@ -21,9 +21,10 @@ let g:tmuxcomplete#asyncomplete_source_options = {
 			\     'truncate':        0
 			\     },
 			\ }
-
-
-let g:clangd_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd'
+let g:clangd_path =
+		\ '/Applications/Xcode.app/Contents/Developer/Toolchains' .
+		\ '/XcodeDefault.xctoolchain' .
+		\ '/usr/bin/clangd'
 
 if executable(g:clangd_path)
 	augroup lsp_clangd

@@ -58,12 +58,14 @@ Plug 'sjl/badwolf'
 Plug 'ludovicchabant/vim-lawrencium'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'amiorin/vim-project'
+Plug 's-daveb/vim-project'
+" Plug 'amiorin/vim-project' " Forked because it was ugly. Fixed syntax
+" colors.
 
 " Project Integration
 Plug 'editorconfig/editorconfig-vim'
 
-source $HOME/.vim/asyncompletion-plug.vim
+source $HOME/.vim/vim-asynclsp/plug.vim
 "
 " " All of your Plugs must be added before the following line
 call plug#end()            " required
@@ -82,5 +84,5 @@ source $HOME/.vim/tmux.compat.vim
 source $HOME/.vim/UltiSnips.vim
 source $HOME/.vim/editorconfig.vim
 source $HOME/.vim/netrw-conf.vim
-source $HOME/.vim/asynclsp.vim
+source $HOME/.vim/vim-asynclsp/asynclsp.vim
 

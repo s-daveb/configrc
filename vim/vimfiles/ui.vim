@@ -56,7 +56,7 @@ else
 
   hi Normal ctermbg=None
   hi NonText cterm=bold ctermfg=245 ctermbg=None
-  hi Visual ctermbg=White ctermfg=DarkGrey
+  hi Visual ctermbg=DarkCyan ctermfg=LightGrey cterm=bold
   "	hi Folded term=bold ctermbg=None ctermfg=245
   hi SignColumn ctermbg=None cterm=bold
   hi QuickFixLine ctermbg=yellow ctermfg=DarkGray
@@ -65,9 +65,6 @@ endif
 hi lspRefeprence ctermfg=DarkGrey ctermbg=none cterm=underline gui=underline  guifg=Grey
 hi Pmenu guifg=white guibg=#34363A ctermbg=none ctermfg=245 cterm=bold
 hi PmenuSel cterm=bold gui=bold
-
-set mouse=a
-let mapleader = ","
 
 nmap <leader>sp :call <SID>SynStack()<CR>
 function! <SID>SynStack()
