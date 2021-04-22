@@ -7,5 +7,5 @@ nnoremap <buffer> <leader>p :LspPreviousError<CR>
 nnoremap <buffer> <leader>q  :LspStopServer<CR>
 
 nnoremap <buffer> <leader>r :LspRename<CR>
-nnoremap <buffer> <leader>[ :LspDefinition<CR>
-nnoremap <buffer> <leader>] :LspDeclaration<CR>
+nnoremap <buffer> <leader>] :LspDefinition<CR>
+nnoremap <buffer> <leader>[ :LspDeclaration<CR>

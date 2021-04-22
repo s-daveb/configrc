@@ -56,8 +56,8 @@ else
 
   hi Normal ctermbg=None
   hi NonText cterm=bold ctermfg=245 ctermbg=None
-  hi Visual ctermbg=DarkCyan ctermfg=LightGrey cterm=bold
-  "	hi Folded term=bold ctermbg=None ctermfg=245
+  hi Visual ctermbg=DarkBlue ctermfg=LightGrey cterm=bold
+ 	hi Folded term=bold ctermbg=Darkblue  ctermfg=LightGrey
   hi SignColumn ctermbg=None cterm=bold
   hi QuickFixLine ctermbg=yellow ctermfg=DarkGray
 endif
