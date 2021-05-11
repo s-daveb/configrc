@@ -2,11 +2,15 @@
 let projroot = getcwd()
 
 function! Test()
+	save
 	cd debug
-	!make qw-test -j 2 && ./qw-test
+	make qw-test -j 2 | !./qw-test
 	cd ..
 endfunction
 
 command! Test :call Test()
 
-autocmd BufWriteCmd *.cpp,*.hpp Test
+"augroup UnitTesting
+"	au!
+"	autocmd BufWritePost *.cpp,*.hpp Test
+"augroup END

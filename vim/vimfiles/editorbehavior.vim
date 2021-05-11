@@ -69,9 +69,6 @@ command Delview call MyDeleteView()
 " Lower-case user commands: http://vim.wikia.com/wiki/Replace_a_builtin_command_using_cabbrev
 cabbrev delview <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Delview' : 'delview')<CR>
 
-"if exists('$TMUX')
-"autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
-"autocmd VimLeave * call system("tmux setw automatic-rename")
-"endif
+com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
 
-
+nnoremap <leader>x :FormatXML<Cr>
