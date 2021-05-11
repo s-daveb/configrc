@@ -10,4 +10,4 @@ nnoremap <buffer> <leader>r :LspRename<CR>
 nnoremap <buffer> <leader>] :LspDefinition<CR>
 nnoremap <buffer> <leader>[ :LspDeclaration<CR>
 
-nnoremap <buffer> <leader>fix :LspCodeAction quifckfix<CR>
+nnoremap <buffer> <leader>fixit :LspCodeAction quickfix<CR>
