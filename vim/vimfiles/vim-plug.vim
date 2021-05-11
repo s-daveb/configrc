@@ -53,6 +53,7 @@ Plug 'tomasr/molokai'
 Plug 'dracula/vim'
 Plug 'kitten/vim-adventurous'  " Dracula's baby
 Plug 'sjl/badwolf'
+Plug 'marciomazza/vim-brogrammer-theme'
 
 " Git/HG integration
 Plug 'ludovicchabant/vim-lawrencium'
